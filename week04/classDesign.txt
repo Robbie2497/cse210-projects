@@ -1,0 +1,63 @@
+Youtube Videos Program
+    Video
+        private _title : string
+        private _author : string
+        private _lengthInSeconds : int
+        private List<Comment> _comments = new List<Comment>
+
+        GetTitle() : string
+        SetTitle() (title: string) : void
+        GetAuthor() : string
+        SetAuthor() (author: string) : void
+        GetLengthInSeconds() : int
+        AddComment() (comment: Comment) : void
+        GetNumberOfComments() : int
+        DisplayComments() 
+
+    Comment
+        private _author : string
+        private _content : string
+
+        GetAuthor() : string
+        SetAuthor() (string)
+        GetContent() : string
+        SetContent() (content: string) : void
+
+
+Online Ordering Program
+    Product
+        private _productId : int
+        private _name : string
+        private _price : decimal
+        private _quantity : int
+
+        GetTotalCost() : decimal
+        GetProductName() : string
+        GetProductId() : int
+
+    Customer
+        private _name : string
+        private _address = new Address()
+
+        LivesInUSA() : bool
+        GetName() : string
+        GetAddress() : string
+
+    Address
+        private _streetAddress : string
+        private _city : string
+        private _stateOrProvince : string
+        private _country : string
+
+        IsInUSA() : bool
+        GetAddress() : string
+
+    Order
+        private _products = new List<Product>
+        private _customer = new Customer()
+        private _shippingCost : decimal
+
+        GetPackingLabel() : string
+        GetShippingLabel() : string
+        GetShippingCost() : decimal
+        GetTotalOrderCost() : decimal
